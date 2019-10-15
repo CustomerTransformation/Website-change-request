@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5a2012edbdbcd",
+        "Name": "WF018 - Web change request writes values to table",
+        "Type": "DATABASE",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Forms Tasks",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"systemID\":\"5a2e48a4d1b0f\",\"systemName\":\"Forms Tasks\",\"query\":\"exec WebChangeRequestGetData\\n\\t@Date = {current_datetime},\\n\\t@CaseRef = {case_ref},\\n\\t@Fullname = {fullName},\\n\\t@Department = {department},\\n\\t@Email = {staffEmail}, \\n\\t@Tel = {telephone},\\n\\t@ManagerEmail = {managersEmail},\\n\\t@TypeRequest ={typeOfRequest}, \\n\\t@OnlineReq = {statutory},\\n\\t@ReasonCreation = {reasonForCreation}, \\n\\t@ReasonChange = {reasonForChange},\\n\\t@PageTitle = {suggestedTitle},\\n\\t@PageLocation = {whereDoesThePage},\\n\\t@WhichSection = {whichSection},\\n\\t@PageLookAlike = {isPage},\\n\\t@LinkToPage = {enter},\\n\\t@WhatToChange = {selectWhatYouWant},\\n\\t@MoreInfo = {pleaseDescribeWhat},\\n\\t@ContentFor = {whoIs},\\n\\t@Clarify = {pleaseClarify},\\n\\t@WhenLive = {tellUsWhen},\\n\\t@LinkPage = {insertLinkToTheP},\\n\\t@Content = {insertContent},\\n\\t@AnyFeatures = {features},\\n\\t@Features = {whatF},\\n\\t@AdditionalInfo = {additional}\",\"results_page_columns_db\":\"\",\"secure_fields_db_database\":\"\",\"escapeTokens\":\"yes\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5a1d2279c517e",
+        "Name": "WF017 - Web change request email to the customer",
+        "Type": "EMAIL",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Web forms",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"lookup_validation\":\"0\",\"subject\":\"Website change request form received {reference}\",\"fromName\":\"{NoReplyEmail_N} \",\"from\":\"{NoReplyEmail} \",\"recipients_to\":\"{staffEmail}\",\"recipients_cc\":\"\",\"recipients_bcc\":\"\",\"pdf_attachments\":\"59b7bc763bc2c\",\"body\":\"<div style=\\\"font-family: arial, helvetica, sans-serif; font-size: 12pt; white-space: pre-wrap;\\\">\\n<p>Dear {fullName},</p>\\n<div></div>\\n<p>Thanks for submitting a website change request.</p>\\n<div></div>\\n<p>A copy of your request has been sent to your manager for approval. Once we've received this, we'll make the change within 5 working days.</p>\\n<div></div>\\n<p>We'll send you an email when it's complete.</p>\\n<p>Yours sincerely,</p>\\n<div></div>\\n<p>Portsmouth City Council{#emailEnd}</p>\\n</div>\",\"attachments\":\"{uploadImagevideoH}{uploadDocumentHere}{uploadAnyRelevant}\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]
