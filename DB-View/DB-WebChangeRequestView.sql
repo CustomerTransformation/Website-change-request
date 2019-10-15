@@ -1,12 +1,13 @@
 USE [ProdFormsTasks]
 GO
 
-/****** Object:  View [dbo].[WebChangeRequestView]    Script Date: 15/10/2019 10:39:08 ******/
+/****** Object:  View [dbo].[WebChangeRequestView]    Script Date: 15/10/2019 11:56:12 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 
@@ -37,7 +38,7 @@ WhatToChange,
 MoreInfo,
 ContentFor,
 Clarify,
-Replace(CONVERT(VARCHAR(20), WhenLive, 103),'/','-')AS WhenLive,
+WhenLive,
 LinkPage,
 Content,
 AnyFeatures,

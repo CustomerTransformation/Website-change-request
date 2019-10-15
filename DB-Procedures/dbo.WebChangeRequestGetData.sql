@@ -1,7 +1,7 @@
 USE [ProdFormsTasks]
 GO
 
-/****** Object:  StoredProcedure [dbo].[WebChangeRequestGetData]    Script Date: 15/10/2019 10:37:50 ******/
+/****** Object:  StoredProcedure [dbo].[WebChangeRequestGetData]    Script Date: 15/10/2019 11:56:31 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -36,7 +36,7 @@ CREATE PROCEDURE [dbo].[WebChangeRequestGetData]
 @MoreInfo text,
 @ContentFor varchar (50),
 @Clarify text ,
-@WhenLive date, 
+@WhenLive varchar(max), 
 @LinkPage text, 
 @Content text, 
 @AnyFeatures varchar(5),

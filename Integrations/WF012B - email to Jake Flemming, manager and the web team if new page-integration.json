@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5da594ea40365",
+        "Name": "WF012B - email to Jake Flemming, manager and the web team if new page",
+        "Type": "EMAIL",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Web forms",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"subject\":\"New Website change request form received - {case_ref}\",\"fromName\":\"{NoReplyEmail_N}\",\"from\":\"{NoReplyEmail}\",\"recipients_to\":\"{managersEmail}, Jake.Fleming@portsmouthcc.gov.uk, WebsiteChangeRequest@portsmouthcc.gov.uk\",\"recipients_cc\":\"\",\"recipients_bcc\":\"\",\"pdf_attachments\":\"59b7bc763bc2c\",\"body\":\"<div>{#emailStart}\\n<p>Hello,</p>\\n\\n<div></div>\\n\\n<p>A new website change request form has been submitted.</p>\\n\\n<div></div>\\n\\n<p>If you approve this request, please forward this email to WebsiteChangeRequest@portsmouthcc.gov.uk with your approval.</p>\\n\\n<div></div>\\n\\n<p>Yours sincerely,</p>\\n\\n<div></div>\\n\\n<p>Portsmouth City Council</p>\\n{#emailEnd}</div>\",\"attachments\":\"{uploadImagevideoH}|{uploadDocumentHere}|{uploadAnyRelevant}\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

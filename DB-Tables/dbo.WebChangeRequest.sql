@@ -1,7 +1,7 @@
 USE [ProdFormsTasks]
 GO
 
-/****** Object:  Table [dbo].[WebChangeRequest]    Script Date: 15/10/2019 10:37:15 ******/
+/****** Object:  Table [dbo].[WebChangeRequest]    Script Date: 15/10/2019 11:55:49 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[WebChangeRequest](
 	[MoreInfo] [text] NULL,
 	[ContentFor] [varchar](50) NULL,
 	[Clarify] [text] NULL,
-	[WhenLive] [date] NOT NULL,
+	[WhenLive] [varchar](max) NULL,
 	[LinkPage] [text] NULL,
 	[Content] [text] NULL,
 	[AnyFeatures] [varchar](5) NULL,

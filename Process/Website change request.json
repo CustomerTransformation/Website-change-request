@@ -11,7 +11,7 @@
     "date_due_warn": "",
     "showCaseReference": false,
     "isSubform": false,
-    "notes": "added the word 'web' to insert link to the page to be amended",
+    "notes": "added a new integration and amended the date field",
     "initial_stage": "Request",
     "initial_stage_id": "AF-Stage-af43c3b9-b32b-41c1-9ba7-f297675fbdfd",
     "prefix": "WF",
@@ -55,11 +55,65 @@
           },
           {
             "id": "59b7cfc8781c2",
-            "condition": "",
+            "condition": "{typeOfRequest} icontains 'Amend an existing page'",
             "repeat_against": "",
             "type_condition": "submission",
             "timed_condition": "",
-            "repeat_interval": ""
+            "repeat_interval": "",
+            "conditionInputs": [
+              {
+                "element": "select",
+                "value": "typeOfRequest",
+                "type": [
+                  "fields"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "icontains",
+                "type": [
+                  "_select"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "Amend an existing page",
+                "type": [
+                  "list"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5da594ea40365",
+            "condition": "{typeOfRequest} icontains 'New page request'",
+            "repeat_against": "",
+            "type_condition": "submission",
+            "timed_condition": "",
+            "repeat_interval": "",
+            "conditionInputs": [
+              {
+                "element": "select",
+                "value": "typeOfRequest",
+                "type": [
+                  "fields"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "icontains",
+                "type": [
+                  "_select"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "New page request",
+                "type": [
+                  "list"
+                ]
+              }
+            ]
           }
         ],
         "user_token": "",
@@ -2873,12 +2927,11 @@
                   "id": "AF-Field-84447b51-f963-4325-92ad-9f7afbc5d3ec"
                 },
                 {
-                  "type": "date",
+                  "type": "textarea",
                   "props": {
-                    "label": "Tell us when the change needs to go live",
+                    "label": "Changes will be made within 5 working days. If there is a specific day that content should go live then please specify here",
                     "dataName": "tellUsWhen",
                     "labelPosition": "alignLeft",
-                    "defaultType": "specific",
                     "defaultValue": "",
                     "helpText": "",
                     "hidden": false,
@@ -2889,19 +2942,20 @@
                     "labelClass": null,
                     "inputClass": null,
                     "width": null,
+                    "lengthCount": null,
                     "hideWhenBlank": null,
-                    "displayAsSeparated": null,
                     "displayCondition": "{typeOfRequest} isnt ''",
                     "mandatoryCondition": null,
                     "readonlyCondition": null,
-                    "mandatory": true,
-                    "minimumValue": "{today}",
-                    "maximumValue": "",
+                    "mandatory": false,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationMask": "",
                     "mandatoryMessage": "This field is required",
-                    "minimumValueMessage": "Please input a date no earlier than _min_value_",
-                    "maximumValueMessage": "Please input a date no later than _max_value_",
-                    "dateFormatMessage": "Please input a date in the format _date_format_",
-                    "dateFormat": ""
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationMaskMessageValue": "Select..."
                   },
                   "conditionInputs": [
                     {
@@ -2919,7 +2973,7 @@
                       ]
                     }
                   ],
-                  "id": "AF-Field-7be85f0a-0cec-4da6-a9ee-abf2d95c9baa"
+                  "id": "AF-Field-5c8a7046-ef1f-45c6-a006-519e9e3702f8"
                 },
                 {
                   "type": "textarea",
